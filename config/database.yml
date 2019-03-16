@@ -22,8 +22,6 @@ default: &default
 development: &development
   <<: *default
   database: twenty_6ix_development
-  username: postgres
-  password: twenty_6ix_password
   host: localhost
 
 test:
