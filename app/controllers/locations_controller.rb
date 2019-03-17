@@ -24,6 +24,14 @@ class LocationsController < ApplicationController
     end
   end
 
+  def location_types
+    location_types = Location.all.map { |l| l.location_type }.uniq
+    if location_types == []
+      render json: ["Shelter", "Out of the Cold", "Housing Help", "24 Hour Respite Sites", "Drop-in"]
+    end
+    render json: location_types
+  end
+
   # PATCH/PUT /locations/1
   def update
     if @location.update(location_params)
