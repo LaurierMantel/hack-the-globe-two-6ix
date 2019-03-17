@@ -1325,4 +1325,5 @@ TORONTO_HOMELESS_SHELTERS.each do |shelter|
     shelter[:province] = 'ON'
   end
 end
-Location.create(TORONTO_HOMELESS_SHELTERS)
+
+# Location.create(TORONTO_HOMELESS_SHELTERS)
