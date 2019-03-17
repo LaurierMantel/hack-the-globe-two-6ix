@@ -30,3 +30,4 @@ test:
 
 production:
   url: <%= ENV['DATABASE_URL'] %>
+  password: <%= ENV['SECRET_KEY_BASE'] %>
